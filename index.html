@@ -1,208 +1,185 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html class="dark" lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MU16.1 Berlijn Pinkstertoernooi 2026</title>
-  <meta name="description" content="40e Berliner Pfingstturnier - Crackerjacks MU16.1 - 22 t/m 25 mei 2026">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Crackerjacks MU16.1 - Berlijn 2026</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "on-background": "#e2e0fc",
+                  "surface-container": "#1e1e32",
+                  "background": "#111125",
+                  "tertiary": "#77d4e3",
+                  "primary": "#ffb3b1",
+                  "primary-container": "#e31937",
+                  "surface-container-low": "#1a1a2e",
+                  "on-surface-variant": "#e6bdbb",
+                  "outline-variant": "#5d3f3e",
+                  "surface-bright": "#37374d",
+                  "tertiary-container": "#00808e"
+                },
+                fontFamily: {
+                  "headline": ["Lexend"],
+                  "body": ["Plus Jakarta Sans"],
+                  "label": ["Lexend"]
+                }
+              }
+            }
+          }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #111125; color: #e2e0fc; min-height: max(884px, 100dvh); }
+        .lexend { font-family: 'Lexend', sans-serif; }
+    </style>
 </head>
-<body>
+<body class="bg-background text-on-background pb-24">
+    <!-- TopAppBar -->
+    <header class="bg-[#111125]/70 backdrop-blur-xl fixed top-0 w-full z-50 shadow-[0_24px_40px_-15px_rgba(227,25,55,0.08)] bg-gradient-to-b from-[#E31937]/10 to-transparent">
+        <div class="flex items-center justify-between px-6 h-16 w-full max-w-md mx-auto">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#E31937]" data-icon="sports_basketball">sports_basketball</span>
+                <h1 class="font-['Lexend'] uppercase tracking-tighter font-black text-xl text-[#E31937] tracking-widest">CRACKERJACKS</h1>
+            </div>
+            <div class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center overflow-hidden">
+                <img alt="Team Logo" src="https://crackerjacks.nl/wp-content/uploads/2026/01/crackerjacks_jubileum.png" class="object-cover w-full h-full"/>
+            </div>
+        </div>
+    </header>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="header-glow"></div>
-    <div class="container">
-      <div class="header-content">
-        <img
-          src="https://crackerjacks.nl/wp-content/uploads/2026/01/crackerjacks_jubileum.png"
-          alt="Crackerjacks Jubileum 2026"
-          class="logo"
-          loading="eager"
-        >
-        <div class="header-text">
-          <p class="header-label">MU16.1</p>
-          <h1 class="header-title">Berlijn<br>Pinkstertoernooi</h1>
-          <p class="header-subtitle">40e editie - 22 t/m 25 mei 2026</p>
-        </div>
-      </div>
-    </div>
-  </header>
+    <main class="pt-16 max-w-md mx-auto">
+        <!-- Hero Section -->
+        <section class="relative h-[530px] flex flex-col justify-end p-6 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="Berlin Basketball Court" class="w-full h-full object-cover opacity-40 grayscale" src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=2090&auto=format&fit=crop"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#111125] via-transparent to-transparent"></div>
+            </div>
+            <div class="relative z-10 space-y-2">
+                <span class="inline-block bg-primary-container text-white px-3 py-1 font-headline text-xs font-bold uppercase tracking-widest rounded-sm">MU16.1 SEASON CLOSER</span>
+                <h2 class="font-headline font-black text-5xl leading-none uppercase tracking-tighter">BERLIJN <br/><span class="text-primary-container">2026</span></h2>
+                <p class="text-on-surface-variant font-medium text-sm pt-2">Vrijdag 22 t/m Maandag 25 Mei</p>
+                <p class="text-sm font-light mt-4 leading-relaxed max-w-[90%] opacity-90">
+                    We zouden het super gaaf vinden om het seizoen samen af te sluiten met het Internationale Pinkstertoernooi in Berlijn-Zehlendorf. Met 300+ teams uit heel Europa belooft de 40e editie een geweldige ervaring te worden!
+                </p>
+            </div>
+        </section>
 
-  <!-- Intro -->
-  <section class="section">
-    <div class="container">
-      <div class="card">
-        <p class="body-text">
-          We sluiten het seizoen af met het Internationale Pinkstertoernooi in Berlijn-Zehlendorf. 40e editie, 300+ teams uit heel Europa. Een mooie manier om het jaar samen af te sluiten.
-        </p>
-      </div>
-    </div>
-  </section>
+        <!-- Program Timeline -->
+        <section class="p-6 space-y-6">
+            <h3 class="font-headline font-extrabold text-2xl uppercase tracking-tight flex items-center gap-2">
+                <span class="w-8 h-[2px] bg-primary-container"></span> PROGRAMMA
+            </h3>
+            <div class="space-y-4">
+                <div class="bg-surface-container-low p-5 border-l-4 border-primary-container/40 rounded-r-lg">
+                    <p class="font-headline text-primary-container text-xs font-black tracking-widest uppercase mb-1">Vrijdag 22 Mei</p>
+                    <h4 class="font-headline font-bold text-lg mb-2">REIS &amp; CHECK-IN</h4>
+                    <p class="text-sm leading-relaxed opacity-80">Vertrek vanuit Amersfoort richting Berlijn. Bij aankomst inchecken op het schoolcomplex en de toernooisfeer proeven.</p>
+                </div>
+                <div class="bg-surface-container-low p-5 border-l-4 border-primary-container rounded-r-lg">
+                    <p class="font-headline text-primary-container text-xs font-black tracking-widest uppercase mb-1">Zaterdag &amp; Zondag</p>
+                    <h4 class="font-headline font-bold text-lg mb-2">GAME DAYS</h4>
+                    <p class="text-sm leading-relaxed opacity-80">Intense poulewedstrijden, gezamenlijk eten en vrije tijd om de highlights van Berlijn te ontdekken met het team.</p>
+                </div>
+                <div class="bg-surface-container-low p-5 border-l-4 border-primary-container/40 rounded-r-lg">
+                    <p class="font-headline text-primary-container text-xs font-black tracking-widest uppercase mb-1">Maandag 25 Mei</p>
+                    <h4 class="font-headline font-bold text-lg mb-2">FINALES &amp; TERUGREIS</h4>
+                    <p class="text-sm leading-relaxed opacity-80">Eventuele finales in de ochtend. Na een gezamenlijke afsluitende lunch stappen we in de auto terug naar Nederland.</p>
+                </div>
+            </div>
+        </section>
 
-  <!-- Info Grid -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Praktisch</h2>
-      <div class="info-grid">
-        <div class="info-card">
-          <span class="info-icon">📅</span>
-          <p class="info-label">Wanneer</p>
-          <p class="info-value">Vrijdag 22 t/m maandag 25 mei</p>
-          <p class="info-detail">Pinksterweekend</p>
-        </div>
-        <div class="info-card">
-          <span class="info-icon">📍</span>
-          <p class="info-label">Waar</p>
-          <p class="info-value">Berlijn-Zehlendorf</p>
-          <p class="info-detail">Berlepschstr. 66, 14165 Berlin</p>
-        </div>
-        <div class="info-card">
-          <span class="info-icon">🚗</span>
-          <p class="info-label">Vervoer</p>
-          <p class="info-value">Carpoolen of trein</p>
-          <p class="info-detail">Stemmen we nog af</p>
-        </div>
-        <div class="info-card">
-          <span class="info-icon">🏫</span>
-          <p class="info-label">Slapen</p>
-          <p class="info-value">Klaslokalen op een school</p>
-          <p class="info-detail">Inclusief ontbijt, samen als team</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- Costs Table -->
+        <section class="p-6 bg-[#0c0c1f]">
+            <h3 class="font-headline font-extrabold text-2xl uppercase tracking-tight mb-6">KOSTEN OVERZICHT</h3>
+            <div class="bg-[#1e1e32] rounded-xl overflow-hidden shadow-2xl">
+                <div class="divide-y divide-[#5d3f3e]/30">
+                    <div class="p-4 flex justify-between items-center bg-[#28283d]">
+                        <div class="flex flex-col">
+                            <span class="font-bold text-sm">Deelnemerskaart</span>
+                            <span class="text-[10px] opacity-50 uppercase tracking-tighter">Verblijf & Maaltijden</span>
+                        </div>
+                        <span class="font-headline font-bold text-primary-container">€180</span>
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <span class="font-bold text-sm">Toernooikosten</span>
+                        <span class="font-headline font-bold">€13</span>
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <span class="font-bold text-sm">Vervoer</span>
+                        <span class="font-headline font-bold">€60 - 80</span>
+                    </div>
+                    <div class="p-4 flex justify-between items-center bg-primary-container text-white">
+                        <span class="font-headline font-black text-lg tracking-widest">TOTAAL</span>
+                        <span class="font-headline font-black text-2xl">€275 - 325</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Programma -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Programma</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-day">VRI</div>
-          <div class="timeline-content">
-            <p class="timeline-title">Reis + inchecken</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-day">ZA/ZO</div>
-          <div class="timeline-content">
-            <p class="timeline-title">Wedstrijden, gezamenlijk eten, vrije tijd</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-day">MA</div>
-          <div class="timeline-content">
-            <p class="timeline-title">Eventuele finales, na de lunch terug</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- Albums Grid -->
+        <section class="p-6">
+            <h3 class="font-headline font-extrabold text-2xl uppercase tracking-tight mb-6">FOTO'S & ACTIE</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <a href="https://www.talentopbeeld.nl/crackerjacks-m16-1-2025-20226" target="_blank" class="bg-surface-container-low p-4 rounded-xl border border-outline-variant hover:border-primary-container transition group flex flex-col items-center justify-center text-center h-32">
+                    <span class="material-symbols-outlined text-3xl mb-2 text-white/50 group-hover:text-primary-container transition">photo_camera</span>
+                    <span class="font-headline text-xs font-bold uppercase tracking-widest">TalentOpBeeld</span>
+                </a>
+                <a href="https://flic.kr/s/aHBqjCA9En" target="_blank" class="bg-surface-container-low p-4 rounded-xl border border-outline-variant hover:border-primary-container transition group flex flex-col items-center justify-center text-center h-32">
+                    <span class="material-symbols-outlined text-3xl mb-2 text-white/50 group-hover:text-primary-container transition">collections</span>
+                    <span class="font-headline text-xs font-bold uppercase tracking-widest">Flickr</span>
+                </a>
+                <a href="https://myalbum.com/album/h4hGbCrsktqbNV/?invite=f943a67e-d77e-4fe2-8329-0ec5c1e41a52" target="_blank" class="bg-surface-container-low p-4 rounded-xl border border-outline-variant hover:border-primary-container transition group flex flex-col items-center justify-center text-center h-32">
+                    <span class="material-symbols-outlined text-3xl mb-2 text-white/50 group-hover:text-primary-container transition">group</span>
+                    <span class="font-headline text-xs font-bold uppercase tracking-widest">Teamuitje</span>
+                </a>
+                <a href="https://myalbum.com/album/TJzCUe9at43Yy3/?invite=edf9490c-2db5-4e1a-be15-3c246fe461e4" target="_blank" class="bg-surface-container-low p-4 rounded-xl border border-outline-variant hover:border-primary-container transition group flex flex-col items-center justify-center text-center h-32">
+                    <span class="material-symbols-outlined text-3xl mb-2 text-white/50 group-hover:text-primary-container transition">sports_basketball</span>
+                    <span class="font-headline text-xs font-bold uppercase tracking-widest">Actiebeelden</span>
+                </a>
+            </div>
+        </section>
 
-  <!-- Kosten -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Kosten per speler</h2>
-      <div class="cost-card">
-        <div class="cost-row">
-          <span class="cost-item">Deelnemerskaart</span>
-          <span class="cost-detail">3 nachten, 8 maaltijden, shuttle</span>
-          <span class="cost-amount">&euro;180</span>
-        </div>
-        <div class="cost-row">
-          <span class="cost-item">Inschrijfgeld team</span>
-          <span class="cost-detail">Gedeeld door het team</span>
-          <span class="cost-amount">ca. &euro;13</span>
-        </div>
-        <div class="cost-row">
-          <span class="cost-item">Vervoer</span>
-          <span class="cost-detail">Amersfoort - Berlijn</span>
-          <span class="cost-amount">ca. &euro;60-80</span>
-        </div>
-        <div class="cost-row">
-          <span class="cost-item">Zakgeld/snacks</span>
-          <span class="cost-detail">Naar eigen inzicht</span>
-          <span class="cost-amount">ca. &euro;20-30</span>
-        </div>
-        <div class="cost-divider"></div>
-        <div class="cost-row cost-total">
-          <span class="cost-item">Totaal</span>
-          <span class="cost-detail"></span>
-          <span class="cost-amount">&euro;275 - 325</span>
-        </div>
-      </div>
-      <p class="cost-note">
-        Borg van &euro;10 per speler (terug na het toernooi). Coaches betalen hun eigen deelnemerskaart, reiskosten delen we met de groep.
-      </p>
-    </div>
-  </section>
-
-  <!-- Actie -->
-  <section class="section section-cta">
-    <div class="container">
-      <h2 class="section-title">Wat ik nodig heb</h2>
-      <div class="card">
-        <ol class="action-list">
-          <li>Gaat je zoon mee?</li>
-          <li>Kun je rijden en/of meebegeleiden?</li>
-        </ol>
-        <p class="action-deadline">Graag reageren zodat we de inschrijving rond kunnen maken.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sfeer & Foto's -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Sfeer & Foto's</h2>
-      <div class="gallery-grid">
-        <a href="https://www.talentopbeeld.nl/crackerjacks-m16-1-2025-20226" target="_blank" rel="noopener noreferrer" class="gallery-link">
-          <span class="gallery-icon">📸</span>
-          <span class="gallery-name">TalentOpBeeld</span>
-          <span class="gallery-arrow">&rarr;</span>
-        </a>
-        <a href="https://flic.kr/s/aHBqjCA9En" target="_blank" rel="noopener noreferrer" class="gallery-link">
-          <span class="gallery-icon">🖼️</span>
-          <span class="gallery-name">Flickr Albums</span>
-          <span class="gallery-arrow">&rarr;</span>
-        </a>
-        <a href="https://myalbum.com/album/h4hGbCrsktqbNV/?invite=f943a67e-d77e-4fe2-8329-0ec5c1e41a52" target="_blank" rel="noopener noreferrer" class="gallery-link">
-          <span class="gallery-icon">📷</span>
-          <span class="gallery-name">Teamuitje</span>
-          <span class="gallery-arrow">&rarr;</span>
-        </a>
-        <a href="https://myalbum.com/album/TJzCUe9at43Yy3/?invite=edf9490c-2db5-4e1a-be15-3c246fe461e4" target="_blank" rel="noopener noreferrer" class="gallery-link">
-          <span class="gallery-icon">🎥</span>
-          <span class="gallery-name">Actiebeelden</span>
-          <span class="gallery-arrow">&rarr;</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Toernooi link -->
-  <section class="section">
-    <div class="container">
-      <a href="https://berlinerpfingstturnier.cupmanager.net" target="_blank" rel="noopener noreferrer" class="tournament-link">
-        <span class="tournament-label">Officieel toernooi</span>
-        <span class="tournament-name">40e Berliner Pfingstturnier</span>
-        <span class="tournament-org">Basketball-Gemeinschaft Zehlendorf (BGZ)</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>Ramon van Wingerden</p>
-      <p>Coach MU16.1 - Crackerjacks Amersfoort</p>
-    </div>
-  </footer>
-
+        <!-- RSVP Form -->
+        <section class="p-6 mb-12" id="rsvp">
+            <div class="bg-[#1e1e32] p-6 rounded-2xl relative overflow-hidden border border-[#E31937]/30 shadow-[0_0_30px_rgba(227,25,55,0.15)]">
+                <div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+                    <span class="material-symbols-outlined text-9xl">send</span>
+                </div>
+                <h3 class="font-headline font-black text-2xl uppercase mb-6 tracking-tighter text-white">GAAT JE ZOON MEE?</h3>
+                <form class="space-y-6">
+                    <div>
+                        <div class="flex gap-4">
+                            <a href="https://wa.me/31640523293?text=Mijn%20zoon%20gaat%20mee%20naar%20Berlijn%21" class="flex-1 cursor-pointer">
+                                <div class="p-4 text-center border-2 border-[#5d3f3e] hover:border-primary-container bg-primary-container/10 transition-all rounded-lg font-bold text-white shadow-lg">JA, LET'S GO</div>
+                            </a>
+                            <a href="https://wa.me/31640523293?text=Helaas%20kan%20mijn%20zoon%20niet%20mee%20naar%20Berlijn." class="flex-1 cursor-pointer">
+                                <div class="p-4 text-center border-2 border-[#5d3f3e] hover:border-white/20 transition-all rounded-lg font-bold text-white/70">NEE</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-headline text-xs font-bold uppercase tracking-widest text-primary-container mb-3 mt-4">KUN JE RIJDEN?</label>
+                        <div class="flex gap-4">
+                            <a href="https://wa.me/31640523293?text=Ik%20kan%20ook%20rijden%20naar%20Berlijn%21" class="flex-1 cursor-pointer">
+                                <div class="p-3 text-center border border-[#5d3f3e] hover:border-primary-container transition-all rounded-lg font-bold text-white text-sm">Ja, ik kan rijden</div>
+                            </a>
+                            <a href="https://wa.me/31640523293?text=Ik%20kan%20helaas%20niet%20rijden." class="flex-1 cursor-pointer">
+                                <div class="p-3 text-center border border-[#5d3f3e] transition-all rounded-lg font-bold text-white/50 text-sm">Nee, helaas</div>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
